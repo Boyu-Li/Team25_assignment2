@@ -1,0 +1,17 @@
+---
+- name: Install all required python packages
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell: |
+    apt-get update
+    apt-get install -y python3-pip
+    pip3 install tweepy 
+    pip3 install couchdb 
+    pip3 install simplejson 
+    pip3 install regex 
+    pip3 install vadersentiment
+    pip3 install nltk 
+    pip3 install twython
+  args:
+    warn: false

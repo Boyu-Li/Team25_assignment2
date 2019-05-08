@@ -1,0 +1,13 @@
+[docker-manager-first]
+manager1 ansible_host="172.26.38.122"
+
+[docker-managers]
+
+[docker-workers]
+
+
+[docker-api]
+manager1
+
+[docker-cloud]
+manager1

@@ -1,0 +1,15 @@
+---
+- name: Make file system
+  filesystem:
+    fstype: ext4
+    dev: /dev/vdc
+
+- name: Creates directory
+  file: path=/database state=directory
+
+- name: Mount file
+  mount:
+    path: /database
+    src: /dev/vdc
+    fstype: ext4
+    state: mounted

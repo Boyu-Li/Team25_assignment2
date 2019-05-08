@@ -1,0 +1,33 @@
+---
+- name: Update and upgrade apt packages
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell: |
+    apt-get update
+    apt-get upgrade -y
+  args:
+    warn: false
+
+- name: Install newer version nodejs
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell: |
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+    apt-get install -y nodejs
+  args:
+    warn: false
+
+- name: Install some required packages
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell: |
+    npm install -g express
+    npm install -g @vue/cli
+
+
+
+
+
