@@ -80,10 +80,10 @@ else:
 with open("host_list.json", "w") as dump_f:
     json.dump(load_dict, dump_f)
 fileHandle = open ( 'ansible_playbooks\hosts', 'w' )
-host = '[docker-master]\nmaster ansible_host="'+str(instances['master'])+'"\n[docker-slaver]'
+host = '[master_group]\nmaster ansible_host='+str(instances['master'])+' hostname=master'+'\n[slaver_group]'
 for i in range(slaver_num):
     temp = 'slaver'+str(i+1)
-    append_string = '\n'+temp+' ansible_host="'+str(instances[temp])+'"'
+    append_string = '\n'+temp+' ansible_host='+str(instances[temp])+' hostname=temp'
     host += append_string
 fileHandle.write(host)
 fileHandle.close()
