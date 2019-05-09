@@ -27,7 +27,7 @@ reservation=ec2_conn.run_instances('ami-1dfc7fb8',
                                      placement='melbourne-qh2-uom',
                                      key_name='boyul',
                                      instance_type='uom.mse.2c9g',
-                                     security_groups=['default', 'ssh', 'http'])
+                                     security_groups=['default', 'ssh', 'http', 'couchdb'])
 instance=reservation.instances[0]
 print('new instance {} has been created'.format(instance.id))
 vol_req=ec2_conn.create_volume(20,'melbourne-qh2-uom')
@@ -35,6 +35,11 @@ print("Please wait!")
 while instance.state!='running':
     instance.update()
     time.sleep(5)
+print(instance.private_ip_address)
+private_ip_address =instance.private_ip_address
+fileHandle = open ( 'hosts', 'w' )
+fileHandle.write()
+fileHandle.close()
 while vol_req.status!='available':
     vol_req.update()
     time.sleep(5)
