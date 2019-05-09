@@ -3,8 +3,19 @@
   become_user: root
 
   roles:
-    - proxy
     - docker
-    - docker-proxy
-    - pypack
-    - nodejs
+
+- hosts: master_group
+  become: yes
+  become_user: root
+
+  roles:
+    - master_yml
+
+
+- hosts: slaver_group
+  become: yes
+  become_user: root
+
+  roles:
+    - slaver_yml

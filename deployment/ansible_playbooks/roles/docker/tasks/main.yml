@@ -1,4 +1,10 @@
 ---
+- name: Override proxy
+  template:
+    src: environment.j2
+    dest: /etc/environment
+
+
 - include_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
@@ -29,3 +35,27 @@
 
 - include_tasks: docker-users.yml
   when: docker_users
+
+
+- name: Create docker-proxy directory
+  file:
+    path: /etc/systemd/system/docker.service.d
+    state: directory
+
+- name: Override docker proxy
+  template:
+    src: http-proxy.conf.j2
+    dest: /etc/systemd/system/docker.service.d/http-proxy.conf
+
+- name: Override docker proxy 2
+  template:
+    src: https-proxy.conf.j2
+    dest: /etc/systemd/system/docker.service.d/https-proxy.conf
+
+- name: Restart docker
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell: |
+    systemctl daemon-reload
+    systemctl restart docker

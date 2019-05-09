@@ -1,0 +1,12 @@
+---
+- name: Transfer hosts file
+  template:
+    src: host_list.json.j2
+    dest: host_list.json
+- name: Read JSON file (can also be a variable).
+  shell: cat host_list.json
+  register: json
+- name: Create docker compose.yml for slaver
+  template:
+    src: docker-compose.yml2.j2
+    dest: docker-compose.yml
