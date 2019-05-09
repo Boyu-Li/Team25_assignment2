@@ -1,5 +1,5 @@
 [docker-master]
-master ansible_host="172.26.38.122"
+master ansible_host="172.26.37.240"
 [docker-slaver]
-slaver1 ansible_host="172.26.38.122"
-
+slaver1 ansible_host="172.26.37.230"
+slaver2 ansible_host="172.26.37.234"

@@ -79,7 +79,7 @@ else:
     load_dict = json.dumps(test_dict)
 with open("host_list.json", "w") as dump_f:
     json.dump(load_dict, dump_f)
-fileHandle = open ( 'hosts', 'w' )
+fileHandle = open ( 'ansible_playbooks\hosts', 'w' )
 host = '[docker-master]\nmaster ansible_host="'+str(instances['master'])+'"\n[docker-slaver]'
 for i in range(slaver_num):
     temp = 'slaver'+str(i+1)
