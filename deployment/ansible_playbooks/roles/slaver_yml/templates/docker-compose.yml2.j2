@@ -5,6 +5,8 @@ services:
     restart: always
     ports:
       - "5984:5984"
+    volumes:
+      - /home/couchdb/{{hostname}}/data:/opt/couchdb/data
     environment:
       - COUCHDB_USER=user
       - COUCHDB_PASSWORD=pass

@@ -83,7 +83,7 @@ fileHandle = open ( 'ansible_playbooks\hosts', 'w' )
 host = '[master_group]\nmaster ansible_host='+str(instances['master'])+' hostname=master'+'\n[slaver_group]'
 for i in range(slaver_num):
     temp = 'slaver'+str(i+1)
-    append_string = '\n'+temp+' ansible_host='+str(instances[temp])+' hostname=temp'
+    append_string = '\n'+temp+' ansible_host='+str(instances[temp])+' hostname='+temp
     host += append_string
 fileHandle.write(host)
 fileHandle.close()

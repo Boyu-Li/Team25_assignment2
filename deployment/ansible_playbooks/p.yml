@@ -1,16 +1,9 @@
-- hosts: all
-  become: yes
-  become_user: root
-
-  roles:
-    - docker
-
 - hosts: master_group
   become: yes
   become_user: root
 
   roles:
-    - master_yml
+    - master_couchdb
 
 
 - hosts: slaver_group
@@ -18,4 +11,4 @@
   become_user: root
 
   roles:
-    - slaver_yml
+    - slaver_couchdb

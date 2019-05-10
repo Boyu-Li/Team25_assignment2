@@ -1,8 +1,9 @@
 ---
 - name: Transfer hosts file
-  template:
-    src: host_list.json.j2
+  copy:
+    src: hosts
     dest: host_list.json
+    mode: 0644
 - name: Read JSON file (can also be a variable).
   shell: cat host_list.json
   register: json
@@ -10,3 +11,7 @@
   template:
     src: docker-compose.yml2.j2
     dest: docker-compose.yml
+- name: Create couchdb storage directory
+  file:
+    path: /home/couchdb/{{hostname}}/data
+    state: directory

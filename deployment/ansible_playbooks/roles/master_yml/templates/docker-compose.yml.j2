@@ -8,6 +8,8 @@ services:
       - "5986:5986"
       - "4369:4369"
       - "9100-9200:9100-9200"
+    volumes:
+      - /home/couchdb/{{hostname}}/data:/opt/couchdb/data
     environment:
       - COUCHDB_USER=user
       - COUCHDB_PASSWORD=pass
