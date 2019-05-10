@@ -1,0 +1,27 @@
+---
+- name: Transfer hosts file
+  copy:
+    src: hosts
+    dest: host_list.json
+    mode: 0644
+
+- name: Read JSON file (can also be a variable).
+  shell: cat host_list.json
+  register: json
+
+- name: Create docker compose.yml for slaver
+  template:
+    src: docker-compose.yml2.j2
+    dest: docker-compose.yml
+
+- name: Create couchdb storage directory
+  file:
+    path: /home/couchdb/{{hostname}}/data
+    state: directory
+
+#- name: Running couchdb-docker
+#  become: yes
+#  become_method: sudo
+#  become_user: root
+#  shell:
+#    docker-compose up -d
