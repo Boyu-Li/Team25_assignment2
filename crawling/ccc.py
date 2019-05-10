@@ -10,13 +10,13 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
 
-
-
 # this class is use for crawling Streaming data from twitter.
 class MyListener(StreamListener):
     def __init__(self):
         self.count = 0
         self.oldDataId =[]
+
+
     #connect to twitter.
     def get_twitter_auth(self):
         '''setup Twitter anthentication.
