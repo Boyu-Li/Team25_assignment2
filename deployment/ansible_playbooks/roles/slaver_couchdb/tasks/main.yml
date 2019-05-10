@@ -1,13 +1,4 @@
 ---
-- name: Transfer hosts file
-  copy:
-    src: hosts
-    dest: host_list.json
-    mode: 0644
-
-- name: Read JSON file (can also be a variable).
-  shell: cat host_list.json
-  register: json
 
 - name: Create docker compose.yml for slaver
   template:
@@ -19,9 +10,25 @@
     path: /home/couchdb/{{hostname}}/data
     state: directory
 
-#- name: Running couchdb-docker
-#  become: yes
-#  become_method: sudo
-#  become_user: root
-#  shell:
-#    docker-compose up -d
+- name: Running couchdb-docker
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell:
+    docker-compose up -d
+
+- name: Transfer cluster shell script1
+  template:
+    src: set_cluster.sh.j2
+    dest: set_cluster.sh
+
+- name: Transfer cluster shell script2
+  template:
+    src: get_cluster.sh.j2
+    dest: get_cluster.sh
+
+- name: Add nodes to cluster
+  shell: sh set_cluster.sh
+
+- name: finish cluster config
+  shell: sh get_cluster.sh

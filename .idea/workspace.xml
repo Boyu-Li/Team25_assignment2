@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9d39947-d69f-482b-8e5e-fafca778d6ae" name="Default Changelist" comment="" />
+    <list default="true" id="d9d39947-d69f-482b-8e5e-fafca778d6ae" name="Default Changelist" comment="boto test">
+      <change afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/get_cluster.sh.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/set_cluster.sh.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ansible_playbooks/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/hosts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_couchdb/templates/docker-compose.yml.j2" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_couchdb/templates/docker-compose.yml.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/templates/docker-compose.yml.j2" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/templates/docker-compose.yml.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/docker-compose.yml2.j2" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/docker-compose.yml2.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_yml/templates/docker-compose.yml2.j2" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_yml/templates/docker-compose.yml2.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/host_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/host_list.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,87 +22,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/main.yaml">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/get_cluster.sh.j2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state>
+              <caret column="55" selection-start-column="55" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/hosts">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/docker-compose.yml2.j2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/proxy/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/nodejs/tasks/main.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state relative-caret-position="120">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/test.py">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_yml/templates/docker-compose.yml2.j2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="288">
+              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/main.yml">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_couchdb/templates/docker-compose.yml.j2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="384">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/setup-Debian.yml">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/environment.j2">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/http-proxy.conf.j2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="24">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker-proxy/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" selection-start-line="24" selection-start-column="22" selection-end-line="25" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/https-proxy.conf.j2">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/pypack/tasks/main.yaml">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/override.conf.j2">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/templates/docker-compose.yml.j2">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/set_cluster.sh.j2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="75" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -99,35 +114,72 @@
       <find>}}</find>
       <find>always</find>
       <find>ignore</find>
+      <find>slaverr</find>
+      <find>host</find>
+      <find>ansible_ssh</find>
+      <find>ansible_ss</find>
     </findStrings>
     <replaceStrings>
       <replace>ubuntu</replace>
       <replace>}}&quot;</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="D:\Git\bin\git.exe" />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Boyu-Li &lt;liboyu816@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/run_main.sh" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/run_scenarios.sh" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/run_upload_code.sh" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/upload_code.yaml" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/main.yaml" />
-        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/main.yaml" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/proxy/tasks/main.yml" />
         <option value="$PROJECT_DIR$/deployment/boto_script.py" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker-proxy/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/hosts" />
-        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/pypack/tasks/main.yaml" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/nodejs/tasks/main.yaml" />
         <option value="$PROJECT_DIR$/deployment/ansible_playbooks/test.py" />
+        <option value="$PROJECT_DIR$/deployment/README.md" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/pypack/tasks/main.yaml" />
+        <option value="$PROJECT_DIR$/deployment/test.py" />
+        <option value="$PROJECT_DIR$/deployment/hosts" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/main.yaml" />
+        <option value="$PROJECT_DIR$/deployment/launch_instance_boto.py" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/patch/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/run_patch.sh" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/patch.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_yml/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/main.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/p.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_couchdb/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/run_main.sh" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/hosts" />
+        <option value="$PROJECT_DIR$/deployment/host_list.json" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/set_cluster.sh" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/get_cluster.sh.j2" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/set_cluster.sh.j2" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/docker-compose.yml2.j2" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_couchdb/templates/docker-compose.yml.j2" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/templates/docker-compose.yml.j2" />
+        <option value="$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_yml/templates/docker-compose.yml2.j2" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1176" />
-    <option name="y" value="180" />
-    <option name="width" value="1944" />
+    <option name="x" value="1872" />
+    <option name="y" value="90" />
+    <option name="width" value="2457" />
     <option name="height" value="2088" />
   </component>
   <component name="ProjectView">
@@ -135,97 +187,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
               <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="defaults" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="molecule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="molecule" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
@@ -233,99 +231,99 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="master_couchdb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="docker-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="master_couchdb" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="master_yml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="master_yml" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="patch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="patch" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="mount" type="462c0819:PsiDirectoryNode" />
+              <item name="slaver_couchdb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="mount" type="462c0819:PsiDirectoryNode" />
+              <item name="slaver_couchdb" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Team25_assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team25_assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="nodejs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="pypack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team25_asignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team25_asignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="ansible_playbooks" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="pypack" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="slaver_couchdb" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deployment/test.py" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python-workspace\Team25_assignment2\deployment\ansible_playbooks\roles\slaver_couchdb\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python-workspace\Team25_assignment2\deployment\ansible_playbooks\roles\docker\templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -339,6 +337,54 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.launch_instance_boto">
+    <configuration name="launch_instance_boto" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Team25_asignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deployment" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/launch_instance_boto.py" />
+      <option name="PARAMETERS" value="nectar_key.json" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Team25_asignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deployment" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployment/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.launch_instance_boto" />
+      <item itemvalue="Python.test" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -350,101 +396,146 @@
       <option name="presentableId" value="Default" />
       <updated>1557115058436</updated>
     </task>
+    <task id="LOCAL-00001" summary="boto test">
+      <created>1557365808941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557365808941</updated>
+    </task>
+    <task id="LOCAL-00002" summary="automatic hosts updating">
+      <created>1557377884013</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557377884013</updated>
+    </task>
+    <task id="LOCAL-00003" summary="boto test">
+      <created>1557382834567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557382834567</updated>
+    </task>
+    <task id="LOCAL-00004" summary="master-slaver deployment">
+      <created>1557404165730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557404165730</updated>
+    </task>
+    <task id="LOCAL-00005" summary="UPDATE">
+      <created>1557484962540</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557484962541</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CLUSTER TEST UPDATE">
+      <created>1557485041824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557485041825</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1719" height="932" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16973294" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3283208" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32668328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39849624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917705" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32998747" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917705" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32917705" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="automatic hosts updating" />
+    <MESSAGE value="boto test" />
+    <MESSAGE value="master-slaver deployment" />
+    <MESSAGE value="UPDATE" />
+    <MESSAGE value="CLUSTER TEST UPDATE" />
+    <option name="LAST_COMMIT_MESSAGE" value="CLUSTER TEST UPDATE" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/boyul.pem">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/run_upload_code.sh">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/pypack/tasks/main.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="56" selection-start-column="56" selection-end-column="56" />
+        <state relative-caret-position="216">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/upload_code.yaml">
+    <entry file="file://D:/Anaconda3/Lib/json/decoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="261">
+          <caret line="354" selection-start-line="354" selection-end-line="354" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/instances_deployment_boto/launch_small.py">
+    <entry file="file://D:/Anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="7392">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_breakpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/test.py" />
+    <entry file="file://$PROJECT_DIR$/deployment/hosts" />
+    <entry file="file://$PROJECT_DIR$/crawling/tweepy_streamer_adelaide.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#200#210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/instances_deployment_boto/nectar.py">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/defaults/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-297">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/instances_deployment_boto/launch_medium.py">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/handlers/main.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/meta/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-354">
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-475" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/cluster_setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/run_scenarios.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/main.yaml" />
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/setup-RedHat.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/docker-users.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/docker-1809-shim.yml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/molecule/default/playbook.yml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -456,103 +547,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/run_scenarios.sh">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/mount/tasks/main.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        <state relative-caret-position="242">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/setup-RedHat.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/proxy/tasks/main.yml" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker-proxy/tasks/main.yml" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/setup-Debian.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/docker-users.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/docker-1809-shim.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/新建文本文档.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/test.py" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/test1.py" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/main.yaml" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/templates/docker-compose.yml2.j2" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_yml/templates/docker-compose.yml.j2" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/templates/host_list.json.j2" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/patch.yml" />
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="39" selection-start-line="39" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/nodejs/tasks/main.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/launch.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/p.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/run_main.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="66" />
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/mount/tasks/main.yaml">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/run_patch.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="17" />
+        <state>
+          <caret column="60" selection-start-column="60" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/molecule/default/molecule.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/defaults/main.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/boto_script.py">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_couchdb/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="29" column="78" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="78" />
+        <state relative-caret-position="289">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/launch_instance_boto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
           <folding>
             <element signature="e#46#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/host_list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="112" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/patch/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/hosts">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/get_cluster.sh.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_couchdb/templates/docker-compose.yml.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/environment.j2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/http-proxy.conf.j2">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/proxy/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/https-proxy.conf.j2">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/templates/override.conf.j2">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker/tasks/setup-Debian.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/docker-proxy/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" selection-start-line="24" selection-start-column="22" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/main.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/pypack/tasks/main.yaml">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/master_yml/templates/docker-compose.yml.j2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/nodejs/tasks/main.yaml">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/set_cluster.sh.j2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="24">
+          <caret line="1" column="75" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/test.py">
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_couchdb/templates/docker-compose.yml2.j2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/ansible_playbooks/roles/slaver_yml/templates/docker-compose.yml2.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>

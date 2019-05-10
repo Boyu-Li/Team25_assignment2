@@ -3,6 +3,7 @@ services:
   couch_{{hostname}}:
     image: "couchdb:2.3.0"
     restart: always
+    network_mode: host
     ports:
       - "5984:5984"
     volumes:
@@ -10,5 +11,5 @@ services:
     environment:
       - COUCHDB_USER=user
       - COUCHDB_PASSWORD=pass
-      - NODENAME={{ansible_ssh_host}}
+      - NODENAME={{ansible_host}}
     container_name: couch_{{hostname}}

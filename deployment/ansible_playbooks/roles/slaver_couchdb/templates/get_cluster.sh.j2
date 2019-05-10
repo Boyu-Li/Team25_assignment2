@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" http://user:pass@{{hostvars['master']['ansible_host']}}:5984/_cluster_setup -d '{"action": "finish_cluster"}'
