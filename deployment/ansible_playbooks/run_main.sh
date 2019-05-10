@@ -1,1 +1,1 @@
-ansible-playbook -i hosts -u ubuntu --key-file=boyul.pem main.yaml
+ansible-playbook -i hosts -u ubuntu --key-file=boyul.pem main.yml

@@ -1,0 +1,5 @@
+---
+- name: Create docker-proxy directory
+  file:
+    path: /home/couchdb/{{hostname}}/data
+    state: directory

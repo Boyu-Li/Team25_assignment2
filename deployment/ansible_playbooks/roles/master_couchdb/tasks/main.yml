@@ -18,3 +18,16 @@
   file:
     path: /home/couchdb/{{hostname}}/data
     state: directory
+
+#- name: Running couchdb-docker
+#  become: yes
+#  become_method: sudo
+#  become_user: root
+#  shell:
+#    docker-compose up -d
+
+#- name: Transfer shell script
+#  copy:
+#    src: set_cluster.sh
+#    dest: set_cluster.sh
+#    mode: 0644
