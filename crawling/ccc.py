@@ -1,9 +1,3 @@
-# Cluster and Cloud Computing Assignment 2
-# Team 33
-# Chenyang Gao, Chenyang Wang, Naijun Wang, Xiaoming Zhang, Yangyang Luo
-
-# This file is for streaming crawling of some major cities in Australia
-
 import sys
 import json
 import time
@@ -15,11 +9,11 @@ from tweepy.streaming import StreamListener
 
 
 
-
 # this class is use for crawling Streaming data from twitter.
 class MyListener(StreamListener):
     def __init__(self):
         self.count = 0
+        self.oldDataId =[]
     #connect to twitter.
     def get_twitter_auth(self):
         '''setup Twitter anthentication.
@@ -48,6 +42,9 @@ class MyListener(StreamListener):
         client_api = API(auth)
         return client_api
 
+    def function(doc):
+        emit(doc.id)
+
             
     # write data into a json file.
     def on_data(self, data):
@@ -67,10 +64,22 @@ class MyListener(StreamListener):
                 self.count = self.count + 1
                 print(self.count)
                 temp_vari = json.loads(data)
-                print(temp_vari)
-                temp_vari['_id'] = str(self.count)
-                db.save(temp_vari)
-                #db.update([temp_vari],'_id' = str(self.count))
+                temp_id = temp_vari["id"]
+                for item in db.view('_design/twitter/_view/byTwitterID'):
+                    #print(item)
+                    self.oldDataId.append(item.value)
+
+                
+                #print(temp_vari)
+                temp_vari['type'] = "twitter"
+                #temp_vari['_id'] = str(self.count)
+                if(temp_id not in self.oldDataId):
+                    docId,revID = db.save(temp_vari)
+                    self.oldDataId.append(temp_id)
+                    print(self.oldDataId)
+                    #db.update([temp_vari],'_id' = str(self.count))
+                else:
+                    print("not accept same data!!!!")
                 return True
         except BaseException as e:
             print("Error on_data: %s" % str(e))
@@ -86,6 +95,7 @@ class MyListener(StreamListener):
 
 # geo info for every cities in Australia.
 Melbourne = [144.67,-38.16,145.39,-37.58]
+
 auth = MyListener().get_twitter_auth()
 twitter_stream = Stream(auth, MyListener())
 Brisbane = [152.65,-27.75,153.44,-27.05]
