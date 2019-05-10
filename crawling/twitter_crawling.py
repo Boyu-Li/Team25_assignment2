@@ -2,9 +2,9 @@ import sys
 import json
 import time
 import couchdb
-import numpy as np
-import re
-from tensorflow import keras
+# import numpy as np
+# import re
+# from tensorflow import keras
 from tweepy import API
 from tweepy import OAuthHandler
 from tweepy import Stream
