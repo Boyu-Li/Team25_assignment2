@@ -3,9 +3,14 @@
   become_user: root
 
   roles:
-    - docker
     - pypack
-    - nodejs
+
+- hosts: master_group:slaver_group
+  become: yes
+  become_user: root
+
+  roles:
+    - docker
 
 - hosts: master_group
   become: yes
@@ -21,3 +26,10 @@
 
   roles:
     - slaver_couchdb
+
+- hosts: normal_group
+  become: yes
+  become_user: root
+
+  roles:
+    - nodejs

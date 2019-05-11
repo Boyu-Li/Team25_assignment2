@@ -68,15 +68,20 @@ if flag == 0:
     load_dict = json.dumps(test_dict)
     instances['master'] = private_ip_address
 else:
-    slaver_num += 1
-    name = 'slaver'+str(slaver_num)
-    instances[name] = private_ip_address
     test_dict['master'] = instances['master']
+    if slaver_num == 2:
+        instances['normal'] = private_ip_address
+        test_dict['normal'] = instances['normal']
+    else:
+        slaver_num += 1
+        name = 'slaver' + str(slaver_num)
+        instances[name] = private_ip_address
     test_dict['slaver_num'] = slaver_num
     for i in range(slaver_num):
-        n1 = 'slaver'+str(i+1)
+        n1 = 'slaver' + str(i + 1)
         test_dict[n1] = instances[n1]
     load_dict = json.dumps(test_dict)
+
 with open("host_list.json", "w") as dump_f:
     json.dump(load_dict, dump_f)
 fileHandle = open ( 'ansible_playbooks\hosts', 'w' )
@@ -85,6 +90,8 @@ for i in range(slaver_num):
     temp = 'slaver'+str(i+1)
     append_string = '\n'+temp+' ansible_host='+str(instances[temp])+' hostname='+temp
     host += append_string
+if 'normal' in instances.keys():
+    host += '\n[normal_group]\nnormal ansible_host=' +str(instances['normal'])+' hostname=normal'
 fileHandle.write(host)
 fileHandle.close()
 print("Launching successfully!")

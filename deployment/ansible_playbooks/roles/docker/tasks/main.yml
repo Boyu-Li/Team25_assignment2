@@ -1,10 +1,4 @@
 ---
-- name: Override proxy
-  template:
-    src: environment.j2
-    dest: /etc/environment
-
-
 - include_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
