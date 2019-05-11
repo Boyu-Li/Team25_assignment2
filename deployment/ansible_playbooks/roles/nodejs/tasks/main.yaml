@@ -27,6 +27,11 @@
     npm install -g express
     npm install -g @vue/cli
 
+- name: Transfer dbhost file
+  template:
+    src: dbhost.txt.j2
+    dest: dbhost.txt
+
 
 
 
