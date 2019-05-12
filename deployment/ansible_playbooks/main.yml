@@ -32,4 +32,4 @@
   become_user: root
 
   roles:
-    - nodejs
+    - server

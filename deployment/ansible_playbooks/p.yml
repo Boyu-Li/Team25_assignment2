@@ -1,14 +1,6 @@
-- hosts: master_group
+- hosts: normal_group
   become: yes
   become_user: root
 
   roles:
-    - master_couchdb
-
-
-- hosts: slaver_group
-  become: yes
-  become_user: root
-
-  roles:
-    - slaver_couchdb
+    - patch
