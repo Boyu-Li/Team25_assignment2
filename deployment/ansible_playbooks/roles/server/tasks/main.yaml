@@ -32,6 +32,27 @@
     src: dbhost.txt.j2
     dest: dbhost.txt
 
+- name: Synchronize application
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell:
+    ls
+
+- name: Running back end application
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell:
+    ls
+
+- name: Running front end application
+  become: yes
+  become_method: sudo
+  become_user: root
+  shell:
+    ls
+
 
 
 
