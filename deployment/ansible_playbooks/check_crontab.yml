@@ -2,8 +2,8 @@
   become: yes
   become_user: root
   tasks:
-    - shell: 'jobs -l'
-      register: job
+    - shell: 'crontab -l'
+      register: cron
 
     - debug:
-        msg: "{{ job.stdout }}"
+        msg: "{{ cron.stdout }}"
