@@ -12,7 +12,15 @@ import os
 f=open(sys.argv[1])
 keys=json.load(f)
 for num in range(4):
-    print('trying to create num.'+ str(num+1)+' instance')
+    if num == 0:
+        node_name = 'master'
+    elif num == 1:
+        node_name = 'slaver1'
+    elif num == 2:
+        node_name = 'slaver2'
+    else:
+        node_name = 'normal'
+    print('Trying to create '+ node_name +' instance......')
     flag = 1
     slaver_num = 0
     instances = {}
