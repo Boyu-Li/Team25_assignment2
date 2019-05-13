@@ -1,7 +1,14 @@
 - hosts: all
   become: yes
   become_user: root
-
+  pre_tasks:
+    - name: Check ALL hosts are reacheable before doing the release
+      assert:
+        that:
+          - ansible_play_hosts == ansible_play_hosts_all
+        fail_msg: 1 or more host is UNREACHABLE
+        success_msg: ALL hosts are REACHABLE, go on
+      run_once: yes
   roles:
     - pypack
 

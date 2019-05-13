@@ -1,0 +1,9 @@
+- hosts: master_group:slaver_group
+  become: yes
+  become_user: root
+  tasks:
+    - shell: 'jobs -l'
+      register: cmd
+
+    - debug:
+        msg: "{{ cmd.stdout }}"
