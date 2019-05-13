@@ -11,7 +11,8 @@ import os
 #get keys
 f=open(sys.argv[1])
 keys=json.load(f)
-for num in range(3):
+for num in range(4):
+    print('trying to create num.'+ str(num+1)+' instance')
     flag = 1
     slaver_num = 0
     instances = {}
