@@ -33,6 +33,8 @@ for num in range(3):
                     os._exit()
     except json.decoder.JSONDecodeError:
         flag = 0
+    except FileNotFoundError:
+        flag = 0
 
     region = RegionInfo(name='melbourne-qh2-uom', endpoint='nova.rc.nectar.org.au')
 
