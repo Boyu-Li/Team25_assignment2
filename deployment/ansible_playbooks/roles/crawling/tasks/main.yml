@@ -31,7 +31,7 @@
   cron:
     name: "Crawling"
     minute: "0"
-    hour: "23"
+    hour: "0"
     job: "home/ubuntu/run.sh >> home/ubuntu/testout"
     disabled: "no"
   tags:
