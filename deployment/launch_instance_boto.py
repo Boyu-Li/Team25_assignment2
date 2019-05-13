@@ -20,7 +20,7 @@ for num in range(4):
         node_name = 'slaver2'
     else:
         node_name = 'normal'
-    print('Trying to create '+ node_name +' instance......')
+    print('\n\nTrying to create '+ node_name +' instance......')
     flag = 1
     slaver_num = 0
     instances = {}
@@ -95,7 +95,7 @@ for num in range(4):
 
     with open("host_list.json", "w") as dump_f:
         json.dump(load_dict, dump_f)
-    fileHandle = open('ansible_playbooks\hosts', 'w')
+    fileHandle = open('ansible_playbooks/hosts', 'w')
     host = '[master_group]\nmaster ansible_host=' + str(instances['master']) + ' hostname=master' + '\n[slaver_group]'
     for i in range(slaver_num):
         temp = 'slaver' + str(i + 1)

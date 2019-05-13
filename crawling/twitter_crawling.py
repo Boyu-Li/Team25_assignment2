@@ -116,12 +116,10 @@ word_index_dict = get_word_index_dict()
 
 
 # Couchdb setup ----------------------------------------------
-user = 'user'
-password = 'pass'
-url = 'http://%s:%s@172.26.38.140:5984/'
+url = 'http://user:pass@172.26.38.140:5984/'
 db_name = 'twitter_sentiment'
 
-server = Server(url % (user, password))
+server = Server(url)
 
 if db_name in server:
     database = server[db_name]
