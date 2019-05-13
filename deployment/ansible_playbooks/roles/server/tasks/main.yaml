@@ -33,11 +33,19 @@
     dest: dbhost.txt
 
 - name: Synchronize application
-  become: yes
-  become_method: sudo
-  become_user: root
-  shell:
-    ls
+  synchronize:
+    src: syn_directory/dataset
+    dest: /home/ubuntu/
+
+- name: Transfer script
+  synchronize:
+    src: syn_directory/keras_model
+    dest: /home/ubuntu/
+
+- name: Synchronize application
+  src: syn_directory/keras_model
+    dest: /home/ubuntu/
+
 
 - name: Running back end application
   become: yes
