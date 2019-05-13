@@ -1,0 +1,28 @@
+---
+- name: Synchronize dataset
+  synchronize:
+    src: syn_directory/dataset
+    dest: /home/ubuntu/
+
+- name: Synchronize model
+  synchronize:
+    src: syn_directory/keras_model
+    dest: /home/ubuntu/
+
+- name: Transfer sourcecode
+  template:
+    src: twitter_crawling.py.j2
+    dest: /home/ubuntu/twitter_crawling.py
+
+- name: Transfer utility file
+  template:
+    src: util.py.j2
+    dest: /home/ubuntu/util.py
+
+- name: Transfer script
+  template:
+    src: run.sh.j2
+    dest: /home/ubuntu/run.sh
+
+- name: Starting crawling
+  shell: sh run.sh

@@ -1,4 +1,4 @@
-- hosts: normal_group
+- hosts: master_group:slaver_group
   become: yes
   become_user: root
 

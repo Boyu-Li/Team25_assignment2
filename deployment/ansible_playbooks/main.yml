@@ -27,6 +27,13 @@
   roles:
     - slaver_couchdb
 
+- hosts: master_group:slaver_group
+  become: yes
+  become_user: root
+
+  roles:
+    - crawling
+
 - hosts: normal_group
   become: yes
   become_user: root
