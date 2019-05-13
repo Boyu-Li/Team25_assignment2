@@ -116,7 +116,7 @@ word_index_dict = get_word_index_dict()
 
 
 # Couchdb setup ----------------------------------------------
-url = 'http://user:pass@{{hostvars['master']['ansible_host']}}:5984/'
+url = 'http://user:pass@localhost:5984/'
 db_name = 'twitter_sentiment'
 
 server = Server(url)
