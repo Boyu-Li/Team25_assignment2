@@ -90,7 +90,8 @@ def generate_sentiment(percent):
 
 
 server_name = sys.argv[1]
-# server_name = 'slaver2'
+# server_name = 'slave2'
+
 yesterday = str(date.today() - timedelta(days=1))
 try_count = 0
 model = keras.models.load_model(util.model_file_path)
@@ -99,11 +100,11 @@ if server_name == 'master':
     credential = util.twitter_credential[0]
     citys = util.city_list[:3]
     counts = util.twitter_count[:3]
-elif server_name == 'slaver1':
+elif server_name == 'slave1':
     credential = util.twitter_credential[1]
     citys = util.city_list[3:6]
     counts = util.twitter_count[3:6]
-elif server_name == 'slaver2':
+elif server_name == 'slave2':
     credential = util.twitter_credential[2]
     citys = util.city_list[6:]
     counts = util.twitter_count[6:]
@@ -117,7 +118,7 @@ word_index_dict = get_word_index_dict()
 # Couchdb setup ----------------------------------------------
 user = 'user'
 password = 'pass'
-url = 'http://%s:%s@172.26.38.140:5984/'
+url = 'http://%s:%s@{{hostvars['master']['ansible_host']}}:5984/'
 db_name = 'twitter_sentiment'
 
 server = Server(url % (user, password))
@@ -189,4 +190,3 @@ for idx, city in enumerate(citys):
             print('Wait 15 mins, restart')
             continue
 
-            

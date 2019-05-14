@@ -118,7 +118,7 @@ word_index_dict = get_word_index_dict()
 # Couchdb setup ----------------------------------------------
 user = 'user'
 password = 'pass'
-url = 'http://%s:%s@{{hostvars['master']['ansible_host']}}:5984/'
+url = 'http://%s:%s@172.26.38.140:5984/'
 db_name = 'twitter_sentiment'
 
 server = Server(url % (user, password))
@@ -190,3 +190,4 @@ for idx, city in enumerate(citys):
             print('Wait 15 mins, restart')
             continue
 
+            

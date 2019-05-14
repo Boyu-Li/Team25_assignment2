@@ -1,9 +1,4 @@
 - hosts: master_group:slaver_group
   become: yes
   become_user: root
-  tasks:
-    - shell: 'curl http://user:pass@localhost:5984/_membership'
-      register: cluster
-
-    - debug:
-        msg: "{{ cluster.stdout }}"
+  roles: patch

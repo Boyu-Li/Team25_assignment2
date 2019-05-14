@@ -24,5 +24,15 @@
     src: run.sh.j2
     dest: /home/ubuntu/run.sh
 
-- name: Starting crawling
-  shell: sh run.sh
+- name: Install Batchjobs on crontab
+  become: yes
+  become_method: sudo
+  become_user: root
+  cron:
+    name: "Crawling"
+    minute: "0"
+    hour: "0"
+    job: "home/ubuntu/run.sh >> home/ubuntu/testout"
+    disabled: "no"
+  tags:
+   - cronjobs
