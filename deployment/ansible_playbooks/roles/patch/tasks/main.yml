@@ -1,18 +1,31 @@
 - name: Transfer script1
   template:
     src: runs.sh.j2
-    dest: runs.sh
+    dest: Application/server/runs.sh
 
 - name: Transfer script2
   template:
     src: runc.sh.j2
-    dest: runc.sh
+    dest: Application/client/cloud_assignment_2/runc.sh
 
 - name: Running back end application
-  shell:
+  shell: |
+    cd Application
+    cd server
     sh runs.sh
+  register: job1
+
+- name: debug1
+  debug: msg="{{ job1.stdout }}"
 
 
 - name: Running front end application
-  shell:
+  shell: |
+    cd Application
+    cd client
+    cd cloud_assignment_2
     sh runc.sh
+  register: job2
+
+- name: debug2
+  debug: msg="{{ job2.stdout }}"
