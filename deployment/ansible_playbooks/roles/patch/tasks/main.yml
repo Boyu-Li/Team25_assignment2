@@ -1,38 +1,18 @@
----
-- name: Synchronize dataset
-  synchronize:
-    src: syn_directory/dataset
-    dest: /home/ubuntu/
-
-- name: Synchronize model
-  synchronize:
-    src: syn_directory/keras_model
-    dest: /home/ubuntu/
-
-- name: Transfer sourcecode
+- name: Transfer script1
   template:
-    src: twitter_crawling.py.j2
-    dest: /home/ubuntu/twitter_crawling.py
+    src: runs.sh.j2
+    dest: runs.sh
 
-- name: Transfer utility file
+- name: Transfer script2
   template:
-    src: util.py.j2
-    dest: /home/ubuntu/util.py
+    src: runc.sh.j2
+    dest: runc.sh
 
-- name: Transfer script
-  template:
-    src: run.sh.j2
-    dest: /home/ubuntu/run.sh
+- name: Running back end application
+  shell:
+    sh runs.sh
 
-- name: Install Batchjobs on crontab
-  become: yes
-  become_method: sudo
-  become_user: root
-  cron:
-    name: "Crawling"
-    minute: "0"
-    hour: "0"
-    job: "home/ubuntu/run.sh >> home/ubuntu/testout"
-    disabled: "no"
-  tags:
-   - cronjobs
+
+- name: Running front end application
+  shell:
+    sh runc.sh

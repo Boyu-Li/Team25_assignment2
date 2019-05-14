@@ -34,27 +34,27 @@
 
 - name: Synchronize application
   synchronize:
-    src: syn_directory/dataset
+    src: syn_directory/Application
     dest: /home/ubuntu/
 
-- name: Transfer script
-  synchronize:
-    src: syn_directory/keras_model
-    dest: /home/ubuntu/
+- name: Transfer script1
+  template:
+    src: runs.sh.j2
+    dest: runs.sh
+
+- name: Transfer script2
+  template:
+    src: runc.sh.j2
+    dest: runc.sh
 
 - name: Running back end application
-  become: yes
-  become_method: sudo
-  become_user: root
   shell:
-    ls
+    sh runs.sh
+
 
 - name: Running front end application
-  become: yes
-  become_method: sudo
-  become_user: root
   shell:
-    ls
+    sh runc.sh
 
 
 
