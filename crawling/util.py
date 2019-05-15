@@ -68,7 +68,7 @@ city_list = [
 	'Darwin'
 ]
 
-twitter_count = [200, 200, 200, 200, 200, 200, 200, 200]
+twitter_count = [20000, 20000, 20000, 20000, 20000, 20000, 20000, 20000]
 
 
 # def get_locaton_geo(city_index):

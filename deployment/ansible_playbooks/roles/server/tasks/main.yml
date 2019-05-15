@@ -47,28 +47,28 @@
     src: runc.sh.j2
     dest: Application/client/cloud_assignment_2/runc.sh
 
-- name: Running back end application
+- name: "Install forever (to run Node.js app)."
+  npm: name=forever global=yes state=latest
+
+- name: "Check list of Node.js apps running."
+  command: /usr/bin/forever list
+  register: forever_list
+  changed_when: false
+
+- name: "Running front end application"
   shell: |
+    cd /home
+    cd ubuntu
     cd Application
     cd server
-    sh runs.sh
-  register: job1
-
-- name: debug1
-  debug: msg="{{ job1.stdout }}"
+    /usr/bin/forever start app.js
 
 
-- name: Running front end application
+- name: "Running back end application"
   shell: |
+    cd /home
+    cd ubuntu
     cd Application
     cd client
     cd cloud_assignment_2
-    sh runc.sh
-  register: job2
-
-- name: debug2
-  debug: msg="{{ job2.stdout }}"
-
-
-
-
+    /usr/bin/forever start node_modules/@vue/cli-service/bin/vue-cli-service.js serve
